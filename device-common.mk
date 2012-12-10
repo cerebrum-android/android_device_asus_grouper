@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# inherit from cerebrum
+$(call inherit-product, vendor/cerebrum/config/common_full.mk)
+
 ifeq ($(TARGET_PREBUILT_KERNEL),)
   LOCAL_KERNEL := device/asus/grouper/kernel
 else
